@@ -84,12 +84,34 @@ real benefit of this comes from organizing and writing code in this mindset
 
 ???
 Information hiding is idea of keeping internal parts of a module private
-only exposing to other programs just what is needed
+only exposing to other programs just what is needed. We do this a lot in core code
 
 ---
 ### example 1
 ```javascript
-// insert printPicture module here
+function MyService (dep1, dep2) {
+    const publicMethods = {
+        getUserId(data) {
+            const id = maybeFormatId(formatData(data))
+            return id
+        }
+    }
+
+    // private functions
+    function formatData (data) {
+      // format the data
+      return validatedAndFormattedData
+    }
+
+    function maybeFormatId (formattedData) {
+     // another private function
+     // validates the data
+     return somethingUseful
+    }
+
+    // only exposing "getUserId"
+    return publicMethods
+}
 ```
 ---
 ## What are some qualities of deletable code?
