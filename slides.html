@@ -42,16 +42,38 @@ code that can be (re)moved or replaced without major overhaul
 
 ## Why is this good?
 * deletable == testable
-* safeguard against over-engineering
-* business needs change (frequently)
 
 ???
 deletable code is pretty self-contained, so chances
 are good it can be tested easily
 
+---
+
+## Why is this good?
+* deletable == testable
+* safeguard against over-engineering
+
+???
 armor-plated "permanent fixes" are probably bad and costly
 
+---
+## Why is this good?
+* deletable == testable
+* safeguard against over-engineering
+* business needs change (frequently)
+
+???
 real benefit of this comes from organizing and writing code in this mindset
+
+---
+## What are some qualities of deletable code?
+ * code that is modular
+
+---
+
+## What are some qualities of deletable code?
+ * code that is modular
+ * minimal API surface
 
 ---
 
@@ -64,6 +86,24 @@ real benefit of this comes from organizing and writing code in this mindset
 Information hiding is idea of keeping internal parts of a module private
 only exposing to other programs just what is needed
 
+---
+### example 1
+```javascript
+// insert printPicture module here
+```
+---
+## What are some qualities of deletable code?
+ * code that is modular
+ * minimal API surface
+ * information hiding!
+
+#### These all will help your code be easier to read & reason about
+
+---
+
+# code reuse vs writing deletabled code?
+
+???
 ---
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
