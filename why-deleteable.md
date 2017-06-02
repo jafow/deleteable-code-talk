@@ -1,2 +1,0 @@
-# Deletable & Defensive Code
-j
