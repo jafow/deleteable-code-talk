@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deletable, Defensive Code</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Roboto Slab';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Deletable & Defensive Code
+
+
+---
+
+# Agenda
+
+1. What and why?
+2. Story
+3. Code Examples!
+
+---
+
+## What is Deletable Code?
+
+code that can be (re)moved or replaced without major overhaul
+
+---
+
+## Why is this good?
+* deletable == testable
+* safeguard against over-engineering
+* business needs change (frequently)
+
+???
+deletable code is pretty self-contained, so chances
+are good it can be tested easily
+
+armor-plated "permanent fixes" are probably bad and costly
+
+real benefit of this comes from organizing and writing code in this mindset
+
+---
+
+## What are some qualities of deletable code?
+ * code that is modular
+ * minimal API surface
+ * information hiding!
+
+???
+Information hiding is idea of keeping internal parts of a module private
+only exposing to other programs just what is needed
+
+---
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
+
